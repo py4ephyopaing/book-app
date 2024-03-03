@@ -11,7 +11,7 @@ export default function SideBar({ showAside, setShowAside }) {
             <a href="" className="bg-gray-300 dark:bg-slate-600 text-teal-800 dark:text-teal-400 leading-9 font-medium lg:rounded-l-3xl block p-3 px-5 text-md lg:pl-8 lg:mb-5 rounded-3xl lg:rounded-none">
                 <FaHome className="inline-block w-6 h-6" /> <span className="px-5 hidden lg:inline">Home</span>
             </a>
-            <a href="" className="text-teal-800 dark:text-teal-400 leading-9 font-medium lg:rounded-l-3xl block p-3 px-5 text-lg lg:pl-8 lg:mb-5 rounded-3xl lg:rounded-none">
+            <a href={`/discover`} className="text-teal-800 dark:text-teal-400 leading-9 font-medium lg:rounded-l-3xl block p-3 px-5 text-lg lg:pl-8 lg:mb-5 rounded-3xl lg:rounded-none">
                 <FaSearch className="inline-block w-6 h-6" /> <span className="px-5 hidden lg:inline">Discover</span>
             </a>
             <a href="" className="text-teal-800 dark:text-teal-400 leading-9 font-medium lg:rounded-l-3xl block p-3 px-5 text-md lg:pl-8 lg:mb-5 rounded-3xl lg:rounded-none">
