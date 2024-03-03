@@ -3,7 +3,7 @@ import { FaArrowCircleRight, FaStar, FaStarHalf } from 'react-icons/fa';
 import SearchBar from '../components/SearchBar';
 import Notice from '../components/Notice';
 import BookItem from '../components/BookItem';
-import AuthorListItem from '../components/AuthorListItem';
+import BookContainer from '../components/BookContainer';
 
 export default function Home() {
     let [ query, setQuery ] = useState('');
@@ -126,9 +126,7 @@ export default function Home() {
 				Top Authors <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
 			</h3>
 
-            <div className="mt-7">
-                {authors.map((i, index) => <AuthorListItem {...i} key={index} /> )}
-            </div>
+        <BookContainer books={books} />
 
         </div>
     )
