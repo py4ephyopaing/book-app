@@ -5,6 +5,7 @@ import {
 
 import Home from "./pages/Home";
 import Discover from "./pages/Discover";
+import Category from "./pages/Category";
 
 const router = createBrowserRouter([
     {
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
     },
     {
         path: "/discover",
-        element: <Discover />
+        element: <Discover />,
     },
+    {
+        path: "/category",
+        element: <Category />,
+    }
 ]);
 
 export default function Router() {
