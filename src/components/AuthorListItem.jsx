@@ -3,7 +3,7 @@ import { FaHashtag, FaStar } from 'react-icons/fa'
 
 export default function AuthorListItem({ rank, name, birth, dead, rating, published}) {
   return (
-    <div className="dark:even:bg-slate-700 even:bg-gray-200 w-full flex items-center justify-around py-5">
+    <a href={`/authors/${name}`} className="dark:even:bg-slate-700 even:bg-gray-200 w-full flex items-center justify-around py-5">
         <div className="flex items-center">
           <FaHashtag className="w-6 h-6 text-blue-950 dark:text-blue-200" />
           <span className="text-2xl font-bold text-blue-900 dark:text-blue-200">{rank}</span>
@@ -22,6 +22,6 @@ export default function AuthorListItem({ rank, name, birth, dead, rating, publis
           </p>
           <p className="hidden md:block text-md text-gray-600 dark:text-gray-200 px-4">{published} published</p>
         </div>
-    </div>
+    </a>
   )
 }
