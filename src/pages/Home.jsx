@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { FaArrowCircleRight, FaStar, FaStarHalf } from 'react-icons/fa';
 import SearchBar from '../components/SearchBar';
 import Notice from '../components/Notice';
-import BookItem from '../components/BookItem';
 import BookContainer from '../components/BookContainer';
+import AuthorListItem from '../components/AuthorListItem';
 
 export default function Home() {
     let [ query, setQuery ] = useState('');
@@ -118,15 +118,15 @@ export default function Home() {
               Top Books <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-evenly mt-3 gap-x-3">
-              {books.map((i, index) => <BookItem {...i} key={index} />)}
-            </div>
+            <BookContainer books={books} />
 
             <h3 className="text-3xl text-black dark:text-white font-bold font-nunito flex justify-between items-center mt-7">
-				Top Authors <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
-			</h3>
+      				Top Authors <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
+			      </h3>
 
-        <BookContainer books={books} />
+            {
+              authors.map((i, index) => <AuthorListItem {...i} key={index} />)
+            }
 
         </div>
     )
