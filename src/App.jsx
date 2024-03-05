@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import SideBar from './components/SideBar'
 import ASide from './components/ASide'
-import classNames from 'classnames';
 import Router from './Router';
 import { ThemeContext } from './contexts/ThemeContext';
 
 export default function App() {
   const dark = localStorage.theme === "dark"
-  let [ showAside, setShowAside ] = useState(false)
-  let [ darkTheme, setDarkTheme ] = useState(dark)
+  const [ showAside, setShowAside ] = useState(false)
+  const [ darkTheme, setDarkTheme ] = useState(dark)
+  const [ hideAlert, setHideAlert ] = useState(true)
 
   useEffect(() => {
     localStorage.theme = darkTheme ? "dark" : "light"
@@ -25,6 +25,7 @@ export default function App() {
       </div>
 
       <ASide setShowAside={setShowAside} showAside={showAside} />
+
     </div>
   )
 }
