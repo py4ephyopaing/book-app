@@ -9,6 +9,7 @@ import Category from "./pages/Category";
 import Setting from "./pages/Setting";
 import Author from "./pages/Author";
 import Book from "./pages/Book";
+import CategoryDetail from "./pages/CategoryDetail";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     {
         path: "/book/:name",
         element: <Book />
+    },
+    {
+        path: "/category/:name",
+        element: <CategoryDetail />
     }
 ]);
 
