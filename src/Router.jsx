@@ -8,6 +8,7 @@ import Discover from "./pages/Discover";
 import Category from "./pages/Category";
 import Setting from "./pages/Setting";
 import Author from "./pages/Author";
+import Book from "./pages/Book";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: "/authors/:name",
         element: <Author />
+    },
+    {
+        path: "/book/:name",
+        element: <Book />
     }
 ]);
 
