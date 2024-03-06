@@ -2,11 +2,6 @@ import React from 'react'
 import { FaStar, FaStarHalf } from 'react-icons/fa'
 
 export default function BookItem({img, title, description, rating}) {
-    const calculateStars = (rating) => {
-        let stars = [];
-        
-    }
-
     return (
         <div className="rounded-xl w-full overflow-hidden h-[160px] mb-2 px-5 md:px-10 py-2 flex items-start gap-2 group">
             <img src={img} alt={title} className="duration-200 w-[100px] h-[150px] object-cover rounded-md" />
