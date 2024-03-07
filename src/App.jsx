@@ -18,7 +18,7 @@ export default function App() {
     <div className={`${darkTheme ? 'dark' : 'light'} w-full bg-slate-600`}>
       <SideBar showAside={showAside} setShowAside={setShowAside} />
 
-      <div className="lg:pl-[17rem] md:pr-[22rem]">
+      <div className="xl:pl-[17rem] md:pr-[22rem]">
         <ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
           <Router />
         </ThemeContext.Provider>
