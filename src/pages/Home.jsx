@@ -114,13 +114,13 @@ export default function Home() {
 
             <hr className="block md:hidden my-4" />
 
-            <h3 className="text-3xl text-black dark:text-white font-bold font-nunito flex justify-between items-center">
+            <h3 className="text-2xl lg:text-3xl text-black dark:text-white font-bold font-nunito flex justify-between items-center">
               Top Books <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
             </h3>
 
             <BookContainer books={books} />
 
-            <h3 className="text-3xl text-black dark:text-white font-bold font-nunito flex justify-between items-center mt-7">
+            <h3 className="text-2xl lg:text-3xl text-black dark:text-white font-bold font-nunito flex justify-between items-center mt-7">
       				Top Authors <span className="hover:text-blue-950 hover:scale-90 duration-100"><FaArrowCircleRight /></span>
 			      </h3>
 
