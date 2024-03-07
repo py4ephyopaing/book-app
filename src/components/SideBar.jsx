@@ -3,7 +3,7 @@ import { FaBars, FaCat, FaCogs, FaHome, FaSearch } from 'react-icons/fa'
 
 export default function SideBar({ showAside, setShowAside }) {
     const [ location, setLocation ] = useState(window.location.pathname)
-    const active = 'shadow-md shadow-black lg:shadow-none bg-indigo-200 dark:bg-slate-600'
+    const active = 'lg:shadow-none bg-white lg:bg-white/20'
 
     return (
         <nav className="fixed bottom-4 lg:top-0 left-0 rounded-3xl lg:rounded-none lg:block lg:h-screen mt-2 lg:m-0 mx-[2.5%] md:mx-2 w-[95%] md:w-[calc(100%-23rem)] lg:w-[17rem] bg-indigo-200 bg-opacity-70 dark:bg-[rgba(15,23,42,0.7)] dark:hover:bg-slate-900 lg:bg-slate-200 dark:lg:bg-slate-900 shadow-xl z-10">
