@@ -8,7 +8,7 @@ export default function ASide({ showAside, setShowAside }) {
         "md:block md:translate-x-0 fixed top-0 right-0 h-screen w-[22rem] bg-slate-200 dark:bg-slate-900": true,
         "duration-500": true,
         "translate-x-full": !showAside,
-        "z-10 translate-x-0": showAside
+        "z-50 translate-x-0": showAside
     })}>
 
 
